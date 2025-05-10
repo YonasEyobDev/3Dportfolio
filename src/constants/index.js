@@ -257,7 +257,7 @@ const socialImgs = [
     },
     {
         name: "x",
-        url: "https://www.instagram.com/phycho.j.003/",
+        url: "https://x.com/YonasEyobDev",
         imgPath: "/images/x.png",
     },
     {
