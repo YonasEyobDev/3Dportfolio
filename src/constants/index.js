@@ -262,7 +262,7 @@ const socialImgs = [
     },
     {
         name: "linkedin",
-        url: "https://www.instagram.com/phycho.j.003/",
+        url: "https://www.linkedin.com/in/yonas-eyob-7a3b81364/",
         imgPath: "/images/linkedin.png",
     },
 ];
