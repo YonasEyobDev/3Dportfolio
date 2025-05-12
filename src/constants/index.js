@@ -74,18 +74,24 @@ const logoIconsList = [
 const abilities = [
     {
         imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Committed to delivering high-quality results with precision and attention to detail.",
+        title: "Planning & Strategy",
+        desc: "We'll collaborate to map out your website's goals, target audience, \n" +
+            "          and key functionalities. We'll discuss things like site structure, \n" +
+            "          navigation, and content requirements.",
     },
     {
         imgPath: "/images/chat.png",
-        title: "Clear Communication",
-        desc: "Ensuring transparency through consistent updates and open collaboration at every stage.",
+        title: "Development & Progress Update",
+        desc: "Once we agree on the plan, I cue my lofi playlist and dive into\n" +
+            "          coding. From initial sketches to polished code, I keep you updated\n" +
+            "          every step of the way.",
     },
     {
         imgPath: "/images/time.png",
-        title: "Timely Delivery",
-        desc: "Respecting deadlines by delivering well-executed projects on time—without compromising quality.",
+        title: "Development & Launch",
+        desc: "This is where the magic happens! Based on the approved design, \n" +
+            "          I'll translate everything into functional code, building your website\n" +
+            "          from the ground up.",
     },
 ];
 

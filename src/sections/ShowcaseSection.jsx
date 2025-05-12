@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import TitleHeader from "../components/TitleHeader.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,42 +44,56 @@ const Section = props => {
     return (
         <section ref={sectionRef} className="app-showcase" id="work">
             <div className="w-full">
+                <div className="w-full h-full md:px-20 px-5 py-8">
+                    <TitleHeader
+                        title="Projects"
+                        sub="💼 My Recent Project"
+                    />
+                </div>
                 <div className="showcaselayout">
-                    {/* LEFT */}
-                    <div className="first-project-wrapper" ref={project1Ref}>
-                        <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="" />
-                        </div>
-                        <div className="text-content">
-                            <h2>
-                                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                                called Ryde
-                            </h2>
-                            <p className="text-white-50 md:text-xl">
-                                An app built with React Native, Expo, & TailwindCSS for a fast,
-                                user-friendly experience.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    {/* RIGHT */}
-                    <div className="project-list-wrapper overflow-hidden">
+                    <div className="lg:columns-3 md:columns-2 columns-1 p-10">
                         <div className="project" ref={project2Ref}>
-                            <div className="image-wrapper bg-[#ffefdb]">
+                            <div className="image-wrapper bg-[#ffefdb] rounded-2xl">
+                                <img src="/images/project2.png" alt="" />
+                            </div>
+                            <h2 >The Library Management Platform</h2>
+                        </div>
+
+                        <div className="project" ref={project3Ref}>
+                            <div className="image-wrapper bg-[#ffe7eb] rounded-2xl">
+                                <img src="/images/project3.png" alt="" />
+                            </div>
+                            <h2>YC Directory - A Startup Showcase App</h2>
+                        </div>
+
+                        <div className="project" ref={project2Ref}>
+                            <div className="image-wrapper bg-[#ffefdb] rounded-2xl">
                                 <img src="/images/project2.png" alt="" />
                             </div>
                             <h2>The Library Management Platform</h2>
                         </div>
 
                         <div className="project" ref={project3Ref}>
-                            <div className="image-wrapper bg-[#ffe7eb]">
+                            <div className="image-wrapper bg-[#ffe7eb] rounded-2xl">
+                                <img src="/images/project3.png" alt="" />
+                            </div>
+                            <h2>YC Directory - A Startup Showcase App</h2>
+                        </div>
+                        <div className="project" ref={project3Ref}>
+                            <div className="image-wrapper bg-[#ffe7eb] rounded-2xl">
+                                <img src="/images/project3.png" alt="" />
+                            </div>
+                            <h2>YC Directory - A Startup Showcase App</h2>
+                        </div>
+                        <div className="project" ref={project3Ref}>
+                            <div className="image-wrapper bg-[#ffe7eb] rounded-2xl">
                                 <img src="/images/project3.png" alt="" />
                             </div>
                             <h2>YC Directory - A Startup Showcase App</h2>
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
