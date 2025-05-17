@@ -19,7 +19,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-[6px] md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-[6px] md:text-lg lg:text-2xl sm:text-[15px]">
             I’m an aspiring developer with a strong interest in
             technology, design, and continuous learning.
             I’m focused on building thoughtful,
