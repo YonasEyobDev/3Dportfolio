@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/Model/contact/ContactExperience.jsx";
+{/*import ContactExperience from "../components/Model/contact/ContactExperience.jsx";*/}
 
 
 const Contact = () => {
@@ -47,7 +47,7 @@ const Contact = () => {
                     title="Get in Touch – Let’s Connect"
                     sub="💬 Have questions or ideas? Let’s talk! 🚀"
                 />
-                <div className="grid-12-cols mt-16">
+                <div className=" mt-16">
                     <div className="xl:col-span-5">
                         <div className="flex-center card-border rounded-xl p-10">
                             <form
@@ -106,11 +106,6 @@ const Contact = () => {
                                     </div>
                                 </button>
                             </form>
-                        </div>
-                    </div>
-                    <div className="xl:col-span-7 min-h-96">
-                        <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-                            <ContactExperience />
                         </div>
                     </div>
                 </div>

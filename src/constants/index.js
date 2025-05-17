@@ -8,13 +8,13 @@ const navLinks = [
         link: "#experience",
     },
     {
-        name: "Skills",
-        link: "#skills",
+        name: "Approach",
+        link: "#approach",
     },
-    {
+    {/*
         name: "Testimonials",
         link: "#testimonials",
-    },
+    */},
 ];
 
 const words = [
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-    { value: 1, suffix: "+", label: "Years of Experience" },
-    { value: 2, suffix: "+", label: "Satisfied Clients" },
-    { value: 4, suffix: "+", label: "Completed Projects" },
-    { value: 100, suffix: "%", label: "Client Retention Rate" },
+    { value: 65, suffix: "+", label: "Years of Experience" },
+    { value: 54, suffix: "+", label: "Satisfied Clients" },
+    { value: 50, suffix: "+", label: "Completed projects" },
+    { value: 98, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
@@ -71,7 +71,7 @@ const logoIconsList = [
     },
 ];
 
-const abilities = [
+const approaches = [
     {
         imgPath: "/images/seo.png",
         title: "Planning & Strategy",
@@ -95,65 +95,91 @@ const abilities = [
     },
 ];
 
-const techStackImgs = [
+const projects = [
     {
-        name: "React Developer",
-        imgPath: "/images/logos/react.png",
+        id: 1,
+        title: "3D Solar System Planets to Explore",
+        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+        img: "/images/project1.png",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        link: "/ui.earth.com",
     },
     {
-        name: "Python Developer",
-        imgPath: "/images/logos/python.svg",
+        id: 2,
+        title: "Yoom - Video Conferencing App",
+        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+        img: "/images/project2.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+        link: "/ui.yoom.com",
     },
     {
-        name: "Backend Developer",
-        imgPath: "/images/logos/node.png",
+        id: 3,
+        title: "AI Image SaaS - Canva Application",
+        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+        img: "/images/project3.png",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        link: "/ui.aiimg.com",
     },
     {
-        name: "Interactive Developer",
-        imgPath: "/images/logos/three.png",
+        id: 4,
+        title: "Animated Apple Iphone 3D Website",
+        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        img: "/images/project2.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        link: "/ui.apple.com",
     },
     {
-        name: "Project Manager",
-        imgPath: "/images/logos/git.svg",
+        id: 5,
+        title: "Animated Apple Iphone 3D Website",
+        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        img: "/images/project3.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        link: "/ui.apple.com",
     },
-];
+    {
+        id: 6,
+        title: "Animated Apple Iphone 3D Website",
+        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        img: "/images/project1.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        link: "/ui.apple.com",
+    },
+    ];
 
-const techStackIcons = [
+const workExperience = [
     {
-        name: "React Developer",
-        modelPath: "/model.jsx/react_logo-transformed.glb",
-        scale: 1,
-        rotation: [0, 0, 0],
+        id: 1,
+        title: "Frontend Engineer Intern",
+        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        className: "md:col-span-2",
+        thumbnail: "/images/expp1.svg",
     },
     {
-        name: "Python Developer",
-        modelPath: "/model.jsx/python-transformed.glb",
-        scale: 0.8,
-        rotation: [0, 0, 0],
+        id: 2,
+        title: "Mobile App Dev - JSM Tech",
+        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/images/expp2.svg",
     },
     {
-        name: "Backend Developer",
-        modelPath: "/model.jsx/node-transformed.glb",
-        scale: 5,
-        rotation: [0, -Math.PI / 2, 0],
+        id: 3,
+        title: "Freelance App Dev Project",
+        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/images/expp3.svg",
     },
     {
-        name: "Interactive Developer",
-        modelPath: "/model.jsx/three.js-transformed.glb",
-        scale: 0.05,
-        rotation: [0, 0, 0],
-    },
-    {
-        name: "Project Manager",
-        modelPath: "/model.jsx/git-svg-transformed.glb",
-        scale: 0.05,
-        rotation: [0, -Math.PI / 4, 0],
+        id: 4,
+        title: "Lead Frontend Developer",
+        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        className: "md:col-span-2",
+        thumbnail: "/images/expp4.svg",
     },
 ];
 
 const expCards = [
     {
-        review: "Yonas brought creativity and technical expertise to the team, playing a crucial role in significantly improving our frontend performance. His contributions were invaluable in delivering faster, more efficient user experiences.",
+        review: "Ninja brought creativity and technical expertise to the team, playing a crucial role in significantly improving our frontend performance. His contributions were invaluable in delivering faster, more efficient user experiences.",
         imgPath: "/images/exp1.png",
         logoPath: "/images/logo1.png",
         title: "Frontend Developer",
@@ -165,7 +191,7 @@ const expCards = [
         ],
     },
     {
-        review: "Yonas' contributions to Docker's web applications have been exceptional. He approaches challenges with a problem-solving mindset and consistently delivers high-quality results.",
+        review: "Ninja contributions to Docker's web applications have been exceptional. He approaches challenges with a problem-solving mindset and consistently delivers high-quality results.",
         imgPath: "/images/exp2.png",
         logoPath: "/images/logo2.png",
         title: "Full Stack Developer",
@@ -177,7 +203,7 @@ const expCards = [
         ],
     },
     {
-        review: "Yonas’ work on Appwrite’s mobile app brought exceptional quality and efficiency. He delivered solutions that significantly enhanced our mobile experience and helped us meet our product goals.",
+        review: "Ninja work on Appwrite’s mobile app brought exceptional quality and efficiency. He delivered solutions that significantly enhanced our mobile experience and helped us meet our product goals.",
         imgPath: "/images/exp3.png",
         logoPath: "/images/logo3.png",
         title: "React Native Developer",
@@ -205,51 +231,6 @@ const expLogos = [
     },
 ];
 
-const testimonials = [
-    {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
-        review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-        imgPath: "/images/client1.png",
-    },
-    {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
-        review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-        imgPath: "/images/client3.png",
-    },
-    {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
-        review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        imgPath: "/images/client2.png",
-    },
-    {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
-        review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-        imgPath: "/images/client5.png",
-    },
-    {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
-        review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-        imgPath: "/images/client4.png",
-    },
-    {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-        imgPath: "/images/client6.png",
-    },
-];
-
 const socialImgs = [
     {
         name: "insta",
@@ -258,31 +239,30 @@ const socialImgs = [
     },
     {
         name: "fb",
-        url: "https://www.instagram.com/phycho.j.003/",
+        url: "https://www.instagram.com/yonas_web_dev/",
         imgPath: "/images/fb.png",
     },
     {
         name: "x",
-        url: "https://x.com/YonasEyobDev",
+        url: "https://www.instagram.com/yonas_web_dev/",
         imgPath: "/images/x.png",
     },
     {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/yonas-eyob-7a3b81364/",
+        url: "https://www.instagram.com/yonas_web_dev/",
         imgPath: "/images/linkedin.png",
     },
 ];
 
 export {
     words,
-    abilities,
+    projects,
+    approaches,
     logoIconsList,
     counterItems,
+    workExperience,
     expCards,
     expLogos,
-    testimonials,
     socialImgs,
-    techStackIcons,
-    techStackImgs,
     navLinks,
 };
