@@ -17,7 +17,7 @@ const Card = () => {
                     sub="💼 My Recent Project"
                 />
             </div>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 md:grid-cols-2">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 {projects.map((item) => (
                     <div
                         className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
